@@ -1,0 +1,15 @@
+.footer {
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer_p {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_bookmark {
+    margin-right: 70px;    
+}
