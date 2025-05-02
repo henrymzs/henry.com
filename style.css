@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --input-bg: #1e1e1e;
+    --prompt-color: #4CAF50;
+    --error-color: #ff5252;
+    --accent-color: #64ffda;
+    --minimum-btn: #ffbd2e;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    line-height: 1.6;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    /*overflow: hidden;*/
+}
+
+.terminal-container {
+    flex-grow: 1;
+    background-color: var(--input-bg);
+    border-radius: 4px;
+    padding: 2rem;
+    /*overflow-y: auto;*/
+    /*position: relative;*/
+}
+
+.terminal-header {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    /*user-select: none;*/
+    align-items: center;
+}
+.terminal-title {
+    margin-top: 2px;
+}
+
+.terminal-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.btn-red { background-color: var(--error-color); }
+.btn-yellow { background-color: var(--minimum-btn); }
+.btn-green { background-color: var(--prompt-color); }
+
+/*
+.terminal-output {
+    margin-bottom: 1rem;
+}
+*/
+
+.prompt {
+    color: var(--prompt-color);
+    margin-right: 0.5rem;
+}
+
+.command {
+    color: var(--accent-color);
+}
+
+/* deve funcionar com a lógica do js */
+.error {
+    color: var(--error-color);
+}
+
+.terminal-input {
+    display: flex;
+    align-items: center;
+    margin: 0.8rem 0 0.8rem 0;
+}
+
+#command-input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 0.2rem;
+    /*caret-color: var(--cursor-color);*/
+}
+
+#command-input:focus {
+    outline: none;
+}
+
+.links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.link {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0.5rem;
+    }
+    
+    .terminal-container {
+        padding: 1rem;
+    }
+
+    .hidden {
+        font-size: 12px;
+    }
+}

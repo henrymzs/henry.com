@@ -3,181 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
-    <link rel="stylesheet" href="./src/styles/index.css">
+    <title>Terminal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div class="terminal-container">
+
+        <header class="terminal-header">
+            <div class="terminal-btn btn-red"></div>
+            <div class="terminal-btn btn-yellow"></div>
+            <div class="terminal-btn btn-green"></div>
+            <span class="terminal-title">Terminal</span>
+        </header>
+
+        <main class="terminal-output">
+
+            <section class="output-line">
+                <span class="prompt">$</span>
+                <span class="command">welcome</span>
+                <span>--user=root</span>
+            </section>
+
+            <section class="output-line hidden">
+                <pre style="font-family: inherit;">
+ ____                 _                       
+|  _ \  _____   _____| | ___  _ __   ___ _ __ 
+| | | |/ _ \ \ / / _ \ |/ _ \| '_ \ / _ \ '__|
+| |_| |  __/\ V /  __/ | (_) | |_) |  __/ |   
+|____/ \___| \_/ \___|_|\___/| .__/ \___|_|   
+                              _|                                                
+                </pre>            
+            </section>
+
+            <section class="output-line">Welcome to my terminal-style landing page. Type
+                <span class="command">help</span>
+                <span>to see available commands.</span>
+            </section>
+
+            <section class="terminal-input">
+                <span class="prompt">$</span>
+                <input type="text" id="command-input" autocomplete="off" autofocus placeholder="Enter a command...">
+            </section>
+
+            <section class="links" id="quick-line">
+                <a href="mailto:henrykaua21@gmail" class="link"><i class="fas fa-envelope"></i> contact</a>
+                <a href="https://github.com/henrymzs" target="_blank" class="link"><i class="fab fa-github"></i> github</a>
+                <a href="https://www.linkedin.com/in/henry-kaua" target="_blank" class="link"><i class="fab fa-linkedin"></i> linkedin</a>
+            </section>
+
+        </main>
+
+    </div>
     
-    <header>
-        <nav class="header_nav">
-            <div class="nav_logo">
-                <span>Portfolio</span>
-                <i class="ph ph-desktop-tower"></i>
-                <i class="ph ph-device-mobile"></i>
-            </div>
-            
-            <ul class="nav_list">
-                <li class="list_curriculum"><a href="#">Curriculo</a></li>
-                <li class="list_linkedin"><a href="https://www.linkedin.com/in/henry-kaua/">Linkedin</a></li>
-                <li class="list_github"><a href="https://github.com/henrymzs">Github</a></li>
-                <i class="ph ph-bookmark" style="color: #F72222"></i>
-                <i class="ph ph-linkedin-logo" style="color: #0300CC;"></i>
-                <i class="ph ph-github-logo" style="color: #7b60db;"></i>
-            </ul>
-        </nav>
-    </header>
-
-
-    <main>
-        <section class="about_section">
-            <div class="about_main">
-                <h1>Henry Kauã</h1>
-                <p>
-                    Programador Full-Stack com proficiência em HTML, CSS, JavaScript, Node.js e Java. 
-                    Aberto a novas tecnologias e sempre disposto a aprender o que for necessário para entregar resultados. 
-                    Estudo todos os dias porque me recuso a ser um desenvolvedor medíocre.
-                    Estou progrmando à <span id="counter"></span> como desenvolvedor FullStack, onde tive a oportunidade de trabalhar em diversos projetos e aprimorar minhas habilidades técnicas.
-                </p>
-            </div>
-            <div class="about_info">
-                <ul class="about_list">
-                    <li><i class="ph ph-map-pin" style="color: #DB7500;"></i><p>Fortaleza-CE</p></li>
-                    <li><i class="ph ph-brackets-curly" style="color: #7500EB;"></i><p>Projetos Concluídos +5</p></li>
-                    <li><i class="ph ph-file-code"></i><p>Full-Stack Developer <span id="counter"></span></p></li>
-                </ul>
-            </div>
-        </section>
-        
-        <section class="projects">
-          
-      
-          <section class="main_content">
-            <ul class="content_list">
-              <li class="content_list_item">
-                <div class="content_item_image_container">
-                  <span class="post_tag"><a href="https://github.com/henrymzs/Fast-Net/blob/main/readme.md">Veja o Código</a></span>
-                  <a class="content_item_image_link" href="https://github.com/henrymzs/Fast-Net.git">
-                    <img src="./src/assets/fast-net.png" alt="Imagem do Projeto Fast-Net"/>
-                  </a>
-                </div>
-                <div class="content_item_info">
-                  <h2 class="primary_text_color">
-                    <a>Projeto Fast-Net</a>
-                  </h2>
-                  <div class="post_meta">
-                    <span class="post_author primary_text_color">
-                      <a>Landing Page</a>
-                    </span>
-                    <span class="post_date secondary_text_color">Fevereiro 05, 2025</span>
-                  </div>
-                  <p class="summary primary_text_color">
-                    Clique no botão abaixo para conhecer o projeto.
-                    <span class="summary_span">Este projeto foi desenvolvido com HTML e CSS, utilizando variáveis para cores e classes bem organizadas para a estilização. O código HTML segue uma estrutura clara, tornando a aplicação do CSS mais intuitiva. Além disso, o projeto foi estruturado em pastas para manter a organização.</span>
-                  </p>
-                  <a href="#">
-                    <button class="btn read_more">Saiba Mais</button>
-                  </a>
-                </div>
-              </li>
-              
-              <li class="content_list_item">
-                <div class="content_item_image_container">
-                  <span class="post_tag"><a href="https://github.com/henrymzs/GEEK/blob/main/README.md">Veja o Código</a></span>
-                  <a class="content_item_image_link" href="https://github.com/henrymzs/GEEK.git">
-                    <img src="./src/assets/geek.png"/>
-                  </a>
-                </div>
-                <div class="content_item_info">
-                  <h2 class="primary_text_color">
-                    <a>Projeto Geek</a>
-                  </h2>
-                  <div class="post_meta">
-                    <span class="post_author primary_text_color">
-                      <a>Landing Page</a>
-                    </span>
-                    <span class="post_date secondary_text_color">Fevereiro 06, 2025</span>
-                  </div>
-                  <p class="summary primary_text_color">
-                    Clique no botão abaixo para conhecer o projeto.
-                    <span class="summary_span">Este projeto foi desenvolvido com HTML e CSS, utilizando variáveis para cores e classes bem organizadas para a estilização. O código HTML segue uma estrutura clara, tornando a aplicação do CSS mais intuitiva. Além disso, o projeto foi estruturado em pastas para manter a organização.</span>
-                  </p>
-                  <a href="#">
-                    <button class="btn read_more">Saiba Mais</button>
-                  </a>
-                </div>
-              </li>
-              
-              <li class="content_list_item">
-                <div class="content_item_image_container">
-                  <span class="post_tag"><a href="https://github.com/henrymzs/Linked-List/blob/main/src/Main.c">Veja o Código</a></span>
-                  <a class="content_item_image_link" href="https://github.com/henrymzs/Linked-List">
-                    <img src="./src/assets/linked-list.png"/>
-                  </a>
-                </div>
-                <div class="content_item_info">
-                  <h2 class="primary_text_color">
-                    <a>Lista Ligada</a>
-                  </h2>
-                  <div class="post_meta">
-                    <span class="post_author primary_text_color">
-                      <a>Lógica</a>
-                    </span>
-                    <span class="post-date secondary_text_color">Setembro 22, 2024</span>
-                  </div>
-                  <p class="summary primary-text-color">
-                    Clique no botão abaixo para conhecer o projeto.
-                    <span class="summary_span">Este projeto é um sistema de gerenciamento de biblioteca desenvolvido em C, que permite ao usuário organizar e consultar um acervo de livros. O sistema suporta operações de adicionar, remover, buscar e listar livros, com uma interface interativa no terminal.</span>
-
-                  </p>
-                  <a href="https://github.com/henrymzs/Linked-List/blob/main/README.md">
-                    <button class="btn read_more">Saiba Mais</button>
-                  </a>
-                </div>
-              </li>
-              
-              <li class="content_list_item">
-                <div class="content_item_image_container">
-                  <span class="post_tag"><a href="https://github.com/henrymzs/library-C/blob/main/main.c">Veja o Código</a></span>
-                  <a class="content_item_image_link" href="https://github.com/henrymzs/library-C">
-                    <img src="./src/assets/library.png"/>
-                  </a>
-                </div>
-                <div class="content_item_info">
-                  <h2 class="primary_text_color">
-                    <a>Gerenciamento de Biblioteca</a>
-                  </h2>
-                  <div class="post_meta">
-                    <span class="post_author primary_text_color">
-                      <a>Lógica</a>
-                    </span>
-                    <span class="post_date secondary_text_color">Outubro 15, 2024</span>
-                  </div>
-                  <p class="summary primary_text_color">
-                    Clique no botão abaixo para conhecer o projeto.
-                    <span class="summary_span">Este é um projeto em C que implementa um sistema de gerenciamento de contatos, utilizando listas ligadas. Ele permite adicionar, remover, buscar e listar contatos de forma eficiente.</span>
-                  </p>
-                  <a href="https://github.com/henrymzs/library-C/blob/main/README.md">
-                    <button class="btn read_more">Saiba Mais</button>
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </section>
-        
-        <footer>
-          <ul class="nav_list footer">
-            <li class="list_curriculum"><a href="#">Curriculo</a></li>
-            <li class="list_linkedin"><a href="https://www.linkedin.com/in/henry-kaua/">Linkedin</a></li>
-            <li class="list_github"><a href="https://github.com/henrymzs">Github</a></li>
-            <i class="ph ph-bookmark footer_bookmark" style="color: #F72222"></i>
-            <i class="ph ph-linkedin-logo footer_bookmark" style="color: #0300CC;"></i>
-            <i class="ph ph-github-logo footer_bookmark" style="color: #7b60db;"></i>
-          </ul>
-          <p class="footer_p">Copyrigth &copy; Henry Kauã</p>      
-        </footer>
-        <script src="./src/script/index.js"></script>
+>>>>>>> 3459f09 (feat: complete portfolio rebuild)
 </body>
 </html>
