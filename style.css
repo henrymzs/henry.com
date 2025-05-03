@@ -97,6 +97,10 @@ body {
     outline: none;
 }
 
+#quick-links {
+    display: none;
+}
+
 .links {
     margin-top: 1rem;
     display: flex;
@@ -108,6 +112,7 @@ body {
     color: var(--accent-color);
     text-decoration: none;
     transition: color 0.2s;
+    cursor: pointer;
 }
 
 .link:hover {
